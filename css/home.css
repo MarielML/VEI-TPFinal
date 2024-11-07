@@ -1,9 +1,29 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .content {
-    background-color: black;
-    height: 500px;
+  background-color: #000000;
+  height: 500px;
+}
+
+.cuatrimestres {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cuatrimestre {
+  border: 2px solid #ffffff;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }

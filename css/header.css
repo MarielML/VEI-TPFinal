@@ -25,21 +25,21 @@
 }
 
 .actual {
-  color: blue;
+  color: #0000ff;
 }
 
 .logout-btn {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 20px;
-  background-color: #f44336;
-  color: white;
+  background-color: #840900;
+  color: #ffffff;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
 }
 
 .profile-container {
