@@ -38,7 +38,7 @@
 }
 
 .actual {
-  color: #00aaff;
+  color: #00aaff !important;
 }
 
 .profile-container {
