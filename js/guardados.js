@@ -21,12 +21,31 @@ function crearArticlesAgrupados() {
 
   Object.keys(AGRUPADOS).forEach((materia) => {
     let nodo_div_materia = document.createElement("div");
+    nodo_div_materia.classList.add("materia");
 
-    let nodo_h2 = document.createElement("h2");
-    nodo_h2.textContent = materia;
-    nodo_div_materia.appendChild(nodo_h2);
+    let nodo_header = document.createElement("div");
+    nodo_header.classList.add("materia-header");
+
+    let boton_toggle = document.createElement("button");
+    boton_toggle.textContent = materia;
+    boton_toggle.classList.add("toggle-btn");
+    boton_toggle.addEventListener("click", () => {
+      let nodo_ul = nodo_div_materia.querySelector(".articulos");
+      if (nodo_ul.style.display === "none") {
+        nodo_ul.style.display = "block";
+        boton_toggle.textContent = materia;
+      } else {
+        nodo_ul.style.display = "none";
+        boton_toggle.textContent = materia;
+      }
+    });
+
+    nodo_header.appendChild(boton_toggle);
+    nodo_div_materia.appendChild(nodo_header);
 
     let nodo_ul = document.createElement("ul");
+    nodo_ul.classList.add("articulos");
+    nodo_ul.style.display = "none";
 
     AGRUPADOS[materia].forEach((i) => {
       let nodo_li = document.createElement("li");
@@ -38,6 +57,7 @@ function crearArticlesAgrupados() {
       nodo_ul.appendChild(nodo_li);
     });
 
+    nodo_div_materia.appendChild(boton_toggle);
     nodo_div_materia.appendChild(nodo_ul);
 
     nodo_section.appendChild(nodo_div_materia);
