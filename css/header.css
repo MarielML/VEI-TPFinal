@@ -84,9 +84,8 @@
   display: block;
 }
 
-/* Estilos del botón de menú hamburguesa */
 .hamburger {
-  display: none; /* Se oculta por defecto */
+  display: none;
   background: transparent;
   border: none;
   flex-direction: column;
