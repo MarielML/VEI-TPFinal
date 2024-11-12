@@ -12,6 +12,24 @@
     />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/home.css" />
+
+    <style>
+      ul {
+        display: none;
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+        padding-left: 2rem;
+        display: block;
+      }
+
+      .materia-header button[aria-expanded="true"] + .content-list {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -44,10 +62,80 @@
       </nav>
     </header>
 
-    <main class="content"></main>
+    <main class="content">
+      <section>
+        <div class="materia">
+          <div class="materia-header">
+            <button
+              class="toggle-btn"
+              aria-expanded="false"
+              aria-controls="ingles"
+            >
+              Inglés técnico II
+            </button>
+            <ul id="ingles" class="articulos">
+              <li>
+                <a href="../pdf/List-of-Irregular-Verbs.pdf" target="_blank"
+                  >List of irregular verbs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="materia-header">
+            <button
+              class="toggle-btn"
+              aria-expanded="false"
+              aria-controls="programacion"
+            >
+              Programación Web II
+            </button>
+            <ul id="programacion">
+              <li class="articulos">
+                <a href="" target="_blank">dsds</a>
+              </li>
+              <li class="articulos">
+                <a href="" target="_blank">dsds</a>
+              </li>
+              <li class="articulos">
+                <a href="" target="_blank">dsds</a>
+              </li>
+            </ul>
+          </div>
+          <div class="materia-header">
+            <button
+              class="toggle-btn"
+              aria-expanded="false"
+              aria-controls="seguridad"
+            >
+              Seguridad y Calidad en Aplicaciones Web
+            </button>
+            <ul id="seguridad">
+              <li class="articulos">
+                <a href="" target="_blank">dsds</a>
+              </li>
+            </ul>
+          </div>
+          <div class="materia-header">
+            <button
+              class="toggle-btn"
+              aria-expanded="false"
+              aria-controls="visualizacion"
+            >
+              Visualización e Interfaces
+            </button>
+            <ul id="visualizacion">
+              <li class="articulos">
+                <a href="" target="_blank">dsds</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
 
     <script src="../js/cerrarSesion.js"></script>
+    <script src="../js/materias.js"></script>
   </body>
 </html>

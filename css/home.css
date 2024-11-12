@@ -124,9 +124,6 @@ header {
 }
 
 .materia-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -142,6 +139,8 @@ header {
   margin-bottom: 10px;
   color: #00aaff;
   font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .toggle-btn:hover {
@@ -155,4 +154,5 @@ ul {
 
 li {
   margin-bottom: 10px;
+  padding-left: 2rem;
 }
