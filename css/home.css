@@ -162,9 +162,10 @@ li {
 .clases .toggle-btn {
   font-size: 1.1rem;
   margin: 0.5rem auto;
-  background-color: #524f4f92;;
+  background-color: #b4a9a992;
+  color: #052a07;
 }
 
 .clases .toggle-btn:hover {
-  background-color: #09730f7e;
+  background-color: #63ef6a7e;
 }
