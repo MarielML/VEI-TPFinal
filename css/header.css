@@ -115,19 +115,23 @@
 
 @media (max-width: 767px) {
   .navbar {
-    flex-direction: column;
-    padding: 10px;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content:space-between
   }
 
   #nav-items {
     display: none !important;
     width: 100%;
+    justify-content: flex-end;
     margin-top: 10px;
     margin-left: 10px;
   }
 
-  .nav-item {
-    margin: 10px 0;
+  .nav-link {
+    text-align: right;
+    font-size: 0.8rem !important;
   }
 
   .hamburger {

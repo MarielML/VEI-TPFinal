@@ -181,3 +181,7 @@ li {
 .clases .toggle-btn:hover {
   background-color: #63ef6a7e;
 }
+
+.cuatrimestre {
+  width: 250px;
+}
