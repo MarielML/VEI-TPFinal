@@ -64,8 +64,9 @@
 .logout-btn {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 30px !important;
   right: 0;
+  width: 150px;
   background-color: #d93636;
   color: #ffffff;
   border: none;
@@ -118,7 +119,7 @@
     display: flex !important;
     flex-direction: row;
     align-items: center !important;
-    justify-content:space-between
+    justify-content: space-between;
   }
 
   #nav-items {

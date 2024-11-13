@@ -52,7 +52,22 @@
     </header>
 
     <main class="content">
-      <section id="guardados"></section>
+      <section id="guardados">
+        <div class="search-container">
+          <select id="search-select" class="search-select">
+            <option value="">Selecciona una materia...</option>
+            <option value="programacion-web">Programación Web II</option>
+            <option value="visualizacion">Visualización e Interfaces</option>
+          </select>
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Buscar materia..."
+          />
+          <button class="search-btn" id="search-btn">Buscar</button>
+        </div>
+      </section>
     </main>
 
     <footer>

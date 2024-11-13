@@ -72,6 +72,24 @@
 
     <main class="content">
       <section>
+        <div class="search-container">
+          <select id="search-select" class="search-select">
+            <option value="">Selecciona una materia...</option>
+            <option value="ingles">Inglés técnico II</option>
+            <option value="programacion-web">Programación Web II</option>
+            <option value="seguridad">
+              Seguridad y Calidad en Aplicaciones Web
+            </option>
+          </select>
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Buscar materia..."
+          />
+          <button class="search-btn" id="search-btn">Buscar</button>
+        </div>
+
         <div class="materia">
           <div class="materia-header">
             <button
