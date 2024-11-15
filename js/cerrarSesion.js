@@ -1,22 +1,12 @@
 const profileImg = document.getElementById("profile-img");
 const logoutBtn = document.getElementById("logout-btn");
 
-profileImg.addEventListener("mouseenter", () => {
-  // if (logoutBtn.style.display === "none" || logoutBtn.style.display === "") {
-  //   logoutBtn.style.display = "block";
-  // } else {
-  //   logoutBtn.style.display = "none";
-  // }
-  logoutBtn.style.display = "block";
-});
-
-profileImg.addEventListener("mouseleave", () => {
-  // if (logoutBtn.style.display === "none" || logoutBtn.style.display === "") {
-  //   logoutBtn.style.display = "block";
-  // } else {
-  //   logoutBtn.style.display = "none";
-  // }
-  logoutBtn.style.display = "none";
+profileImg.addEventListener("click", () => {
+   if (logoutBtn.style.display === "none" || logoutBtn.style.display === "") {
+     logoutBtn.style.display = "block";
+   } else {
+     logoutBtn.style.display = "none";
+   }
 });
 
 logoutBtn.addEventListener("click", () => {
