@@ -59,12 +59,13 @@
 .profile-img:hover {
   transform: scale(1.1);
   border: 2px solid #00aaff;
+  cursor: pointer;
 }
 
 .logout-btn {
   display: none;
   position: absolute;
-  top: 30px !important;
+  top: 40px !important;
   right: 0;
   width: 150px;
   background-color: #d93636;
