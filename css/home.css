@@ -43,54 +43,19 @@ main {
   width: 100%;
   max-width: 280px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0, 122, 255, 0.3);
+  box-shadow: 0px 0px 10px #038c5aa4;
   background-color: #333;
 }
 
 .cuatrimestre:hover {
   background-color: #444;
-  border-color: #00aaff;
+  border-color: #038C5A;
   transform: translateY(-5px);
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
-}
-
-header {
-  background-color: #333;
-  padding: 1rem 2rem;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  color: #00aaff;
-}
-
-.nav-item {
-  margin: 0 15px;
-}
-
-.nav-link {
-  color: #ffffff;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #00aaff;
 }
 
 .profile-container {
@@ -128,7 +93,7 @@ header {
 }
 
 .logout-btn:hover {
-  background-color: #d93636;
+  background-color: #038C3E;;
 }
 
 .materia {
@@ -151,7 +116,7 @@ header {
   border-radius: 5px;
   width: 100%;
   margin-bottom: 10px;
-  color: #00aaff;
+  color: #03A64A;
   font-size: 1.5rem;
   text-align: left;
   padding-left: 1rem;
@@ -198,7 +163,7 @@ li {
   padding: 10px;
   font-size: 16px;
   width: 40%;
-  border: 2px solid #00aaff;
+  border: 2px solid #03A64A;;
   border-radius: 5px;
   background-color: #333;
   color: white;
@@ -209,7 +174,7 @@ li {
   padding: 10px;
   font-size: 16px;
   width: 40%;
-  border: 2px solid #00aaff;
+  border: 2px solid #03A64A;;
   border-radius: 5px;
   background-color: #333;
   color: white;
@@ -218,7 +183,7 @@ li {
 
 .search-btn {
   padding: 10px 20px;
-  background-color: #00aaff;
+  background-color: #038C3E;;
   color: white;
   border: none;
   border-radius: 5px;
@@ -229,7 +194,7 @@ li {
 }
 
 .search-btn:hover {
-  background-color: #0099cc;
+  background-color: #052a07;;
 }
 
 @media (max-width: 767px) {

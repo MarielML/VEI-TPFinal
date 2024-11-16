@@ -19,7 +19,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #0088cc;
+  color: #038C3E;;
 }
 
 footer div {
@@ -27,8 +27,8 @@ footer div {
 }
 
 @media (max-width: 767px) {
-    footer {
-        display: block;
-        margin: 0;
-    }
+  footer {
+    display: block;
+    margin: 0;
+  }
 }

@@ -20,7 +20,7 @@ body {
   background-color: #333333e0;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 122, 255, 0.4);
+  box-shadow: 0px 0px 15px #038c5aa4;
   width: 100%;
   max-width: 350px;
 }
@@ -50,7 +50,7 @@ button {
   font-size: 16px;
   margin-top: 20px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #038C3E;
   color: white;
   border: none;
   border-radius: 5px;
@@ -58,12 +58,12 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #051f07;
   transform: translateY(-2px);
 }
 
 a {
-  color: #00aaff;
+  color: white;
   text-decoration: none;
   font-size: 16px;
   display: block;
@@ -72,5 +72,5 @@ a {
 }
 
 a:hover {
-  color: #007bff;
+  color: #038C3E;
 }

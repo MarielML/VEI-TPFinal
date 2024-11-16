@@ -25,6 +25,6 @@ INGRESAR.addEventListener("click", (event) => {
   if (CONTENIDOS_GUARDADOS.length === 0) {
     window.location.href = "./paginas/home.html";
   } else {
-    window.location.href = "./paginas/guardados.html";
+    window.location.href = "./paginas/favoritos.html";
   }
 });
