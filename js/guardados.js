@@ -88,12 +88,12 @@ function crearArticlesAgrupados() {
         nodo_a_nombre.target = "_blank";
         nodo_div1.appendChild(nodo_img_extension);
         nodo_div1.appendChild(nodo_a_nombre);
-        let nodo_a_favorito = document.createElement("a");
-        nodo_a_favorito.href = "";
-        let nodo_img_favorito = document.createElement("img");
-        nodo_img_favorito.src = "../imagenes/favoritos.png";
-        nodo_img_favorito.classList.add("extension");
-        nodo_a_favorito.appendChild(nodo_img_favorito);
+        // let nodo_a_favorito = document.createElement("a");
+        // nodo_a_favorito.href = "";
+        // let nodo_img_favorito = document.createElement("img");
+        // nodo_img_favorito.src = "../imagenes/favoritos.png";
+        // nodo_img_favorito.classList.add("extension");
+        // nodo_a_favorito.appendChild(nodo_img_favorito);
         let nodo_a_descargar = document.createElement("a");
         nodo_a_descargar.href = i.href;
         nodo_a_descargar.target = "_blank";
@@ -104,7 +104,7 @@ function crearArticlesAgrupados() {
         let nodo_check = document.createElement("input");
         nodo_check.type = "checkbox";
         nodo_check.classList.add("file-checkbox");
-        nodo_div2.appendChild(nodo_a_favorito);
+       // nodo_div2.appendChild(nodo_a_favorito);
         nodo_div2.appendChild(nodo_a_descargar);
         nodo_div2.appendChild(nodo_check);
         nodo_li.appendChild(nodo_div1);
