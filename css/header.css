@@ -76,6 +76,7 @@ header {
   display: none;
   position: absolute;
   top: 40px !important;
+  background-color: #830303;
   right: 0;
   width: 150px;
   color: #ffffff;
@@ -88,7 +89,7 @@ header {
 }
 
 .logout-btn:hover {
-  background-color: #051f07;
+  background-color: #320404 !important;
 }
 
 .profile-container:hover .logout-btn {

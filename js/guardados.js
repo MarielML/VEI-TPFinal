@@ -50,7 +50,7 @@ function crearArticlesAgrupados() {
 
     Object.keys(AGRUPADOS[cuatrimestre]).forEach((materia) => {
       let nodo_div_materia = document.createElement("div");
-      nodo_div_materia.classList.add("materia");
+      nodo_div_materia.classList.add("materiaEnFavoritos");
 
       let nodo_header_materia = document.createElement("div");
       nodo_header_materia.classList.add("materia-header");
@@ -76,11 +76,39 @@ function crearArticlesAgrupados() {
 
       AGRUPADOS[cuatrimestre][materia].forEach((i) => {
         let nodo_li = document.createElement("li");
-        let nodo_a = document.createElement("a");
-        nodo_a.href = i.href;
-        nodo_a.textContent = i.nombre;
-        nodo_a.target = "_blank";
-        nodo_li.appendChild(nodo_a);
+        nodo_li.classList.add("file-item");
+        let nodo_div1 = document.createElement("div");
+        let nodo_div2 = document.createElement("div");
+        let nodo_img_extension = document.createElement("img");
+        nodo_img_extension.src = i.extension;
+        nodo_img_extension.classList.add("extension");
+        let nodo_a_nombre = document.createElement("a");
+        nodo_a_nombre.href = i.href;
+        nodo_a_nombre.textContent = i.nombre;
+        nodo_a_nombre.target = "_blank";
+        nodo_div1.appendChild(nodo_img_extension);
+        nodo_div1.appendChild(nodo_a_nombre);
+        let nodo_a_favorito = document.createElement("a");
+        nodo_a_favorito.href = "";
+        let nodo_img_favorito = document.createElement("img");
+        nodo_img_favorito.src = "../imagenes/favoritos.png";
+        nodo_img_favorito.classList.add("extension");
+        nodo_a_favorito.appendChild(nodo_img_favorito);
+        let nodo_a_descargar = document.createElement("a");
+        nodo_a_descargar.href = i.href;
+        nodo_a_descargar.target = "_blank";
+        let nodo_img_descargar = document.createElement("img");
+        nodo_img_descargar.src = "../imagenes/descargar.jpg";
+        nodo_img_descargar.classList.add("extension");
+        nodo_a_descargar.appendChild(nodo_img_descargar);
+        let nodo_check = document.createElement("input");
+        nodo_check.type = "checkbox";
+        nodo_check.classList.add("file-checkbox");
+        nodo_div2.appendChild(nodo_a_favorito);
+        nodo_div2.appendChild(nodo_a_descargar);
+        nodo_div2.appendChild(nodo_check);
+        nodo_li.appendChild(nodo_div1);
+        nodo_li.appendChild(nodo_div2);
         nodo_ul.appendChild(nodo_li);
       });
 

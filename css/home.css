@@ -49,7 +49,7 @@ main {
 
 .cuatrimestre:hover {
   background-color: #444;
-  border-color: #038C5A;
+  border-color: #038c5a;
   transform: translateY(-5px);
 }
 
@@ -93,7 +93,7 @@ a {
 }
 
 .logout-btn:hover {
-  background-color: #038C3E;;
+  background-color: #038c3e;
 }
 
 .materia {
@@ -116,7 +116,7 @@ a {
   border-radius: 5px;
   width: 100%;
   margin-bottom: 10px;
-  color: #03A64A;
+  color: #03a64a;
   font-size: 1.5rem;
   text-align: left;
   padding-left: 1rem;
@@ -136,7 +136,8 @@ li {
   padding-left: 2rem;
 }
 
-.clases .toggle-btn {
+.clases .toggle-btn,
+.materiaEnFavoritos .toggle-btn {
   font-size: 1.1rem;
   margin: 0.5rem auto;
   background-color: #b4a9a992;
@@ -163,7 +164,7 @@ li {
   padding: 10px;
   font-size: 16px;
   width: 40%;
-  border: 2px solid #03A64A;;
+  border: 2px solid #03a64a;
   border-radius: 5px;
   background-color: #333;
   color: white;
@@ -174,7 +175,7 @@ li {
   padding: 10px;
   font-size: 16px;
   width: 40%;
-  border: 2px solid #03A64A;;
+  border: 2px solid #03a64a;
   border-radius: 5px;
   background-color: #333;
   color: white;
@@ -183,7 +184,7 @@ li {
 
 .search-btn {
   padding: 10px 20px;
-  background-color: #038C3E;;
+  background-color: #038c3e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -194,7 +195,25 @@ li {
 }
 
 .search-btn:hover {
-  background-color: #052a07;;
+  background-color: #052a07;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.file-item div {
+  display: flex;
+  align-items: center;
+}
+
+.extension {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 @media (max-width: 767px) {
