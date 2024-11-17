@@ -24,6 +24,14 @@ const VISUALIZACION_DE_DATOS = {
   extension: "../imagenes/pdf.jpg"
 };
 
-const GUARDADOS = [LENGUAJE_PHP, DISENIO_EMOCIONAL, VISUALIZACION_DE_DATOS];
+const MIRO_LEO_PIENSO = {
+  cuatrimestre: "Primer cuatrimestre 2023",
+  nombre: "Práctica Miro, Leo y Pienso.docx (11.3 KB)",
+  materia: "Visualización e Interfaces",
+  href: "../pdf/Practica-Miro.docx",
+  extension: "../imagenes/word.jpg"
+}
+
+const GUARDADOS = [LENGUAJE_PHP, DISENIO_EMOCIONAL, VISUALIZACION_DE_DATOS, MIRO_LEO_PIENSO];
 
 localStorage.setItem(LOCAL_STORAGE_GUARDADOS, JSON.stringify(GUARDADOS));
