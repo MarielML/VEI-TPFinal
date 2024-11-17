@@ -1,7 +1,7 @@
 const LOCAL_STORAGE_GUARDADOS = "guardados";
 
 const DISENIO_EMOCIONAL = {
-  cuatrimestre: "Segundo cuatrimestre 2024",
+  cuatrimestre: "Segundo cuatrimestre 2023",
   nombre: "Diseño emocional.pdf (1 MB)",
   materia: "Visualización e Interfaces",
   href: "../pdf/Diseño emocional.pdf",
@@ -9,7 +9,7 @@ const DISENIO_EMOCIONAL = {
 };
 
 const LENGUAJE_PHP = {
-  cuatrimestre: "Segundo cuatrimestre 2023",
+  cuatrimestre: "Segundo cuatrimestre 2024",
   nombre: "Lenguaje PHP.pdf (701 KB)",
   materia: "Programación Web II",
   href: "../pdf/Lenguaje PHP.pdf",
@@ -17,7 +17,7 @@ const LENGUAJE_PHP = {
 };
 
 const VISUALIZACION_DE_DATOS = {
-  cuatrimestre: "Primer cuatrimestre 2023",
+  cuatrimestre: "Segundo cuatrimestre 2023",
   nombre: "Visualización de datos.pdf (370 KB)",
   materia: "Visualización e Interfaces",
   href: "../pdf/Visualización de datos.pdf",
@@ -25,7 +25,7 @@ const VISUALIZACION_DE_DATOS = {
 };
 
 const MIRO_LEO_PIENSO = {
-  cuatrimestre: "Primer cuatrimestre 2023",
+  cuatrimestre: "Segundo cuatrimestre 2023",
   nombre: "Práctica Miro, Leo y Pienso.docx (11.3 KB)",
   materia: "Visualización e Interfaces",
   href: "../pdf/Practica-Miro.docx",
