@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Cambios guardados con éxito.");
     });
   });
+  
