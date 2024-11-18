@@ -65,21 +65,60 @@
     </header>
 
     <main class="content">
-      <section>
-        <div class="imagen-perfil">
+      <section class="profile-info container mt-4">
+        <h2>Información del Perfil</h2>
+
+        <!-- Imagen de perfil -->
+        <div class="imagen-perfil mb-4">
           <img
             alt="Imagen de perfil"
             class="profile-img-perfil"
             src="../imagenes/perfil.jpg"
             id="profile-img"
           />
-          <button>Cambiar foto</button>
-          <button>Eliminar foto</button>
+          <div>
+            <button class="btn btn-primary mt-2">Cambiar foto</button>
+            <button class="btn btn-danger mt-2">Eliminar foto</button>
+          </div>
         </div>
+
+        <!-- Información no modificable -->
+        <div class="info-constante">
+          <p><strong>Nombre:</strong> Juan Pérez</p>
+          <p><strong>DNI:</strong> 12345678</p>
+          <p><strong>Carrera:</strong> Ingeniería en Informática</p>
+        </div>
+
+        <!-- Información modificable -->
+        <form class="info-modificable mt-4">
+          <div class="mb-3">
+            <label for="telefono" class="form-label"><strong>Teléfono:</strong></label>
+            <input
+              type="tel"
+              id="telefono"
+              class="form-control"
+              value="123-456-7890"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="mail-externo" class="form-label"><strong>Mail externo:</strong></label>
+            <input
+              type="email"
+              id="mail-externo"
+              class="form-control"
+              value="juan.perez@gmail.com"
+              required
+            />
+          </div>
+          <button type="button" id="guardar-cambios" class="btn btn-success">
+            Guardar cambios
+          </button>
+        </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="mt-4">
       <div>
         Contacto:<a href="mailto:contacto@tudominio.com">email@gmail.com</a>
       </div>
@@ -98,7 +137,9 @@
         >
       </div>
     </footer>
+
     <script src="../js/header.js"></script>
     <script src="../js/cerrarSesion.js"></script>
+    <script src="../js/perfil.js"></script>
   </body>
 </html>
