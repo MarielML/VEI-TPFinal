@@ -185,7 +185,7 @@ li {
 }
 
 .btn-nota a {
-  width: 300px;
+  width: 200px;
   margin: 1rem;
 }
 
@@ -200,6 +200,11 @@ li {
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-nota button:hover {
+  background-color: #051f07;
+  transform: translateY(-2px);
 }
 
 .file-item {
@@ -221,7 +226,12 @@ li {
 }
 
 .subir-nota-form {
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
