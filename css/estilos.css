@@ -50,7 +50,7 @@ button {
   font-size: 16px;
   margin-top: 20px;
   cursor: pointer;
-  background-color: #038C3E;
+  background-color: #038c3e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -72,5 +72,5 @@ a {
 }
 
 a:hover {
-  color: #038C3E;
+  color: #038c3e;
 }
