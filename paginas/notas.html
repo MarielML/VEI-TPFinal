@@ -78,87 +78,132 @@
 
     <main class="content">
       <section>
-        <div class="materia">
-          <!-- Materia: Inglés Técnico II -->
-          <div class="materia-header">
-            <button
-              class="toggle-btn"
-              aria-expanded="false"
-              aria-controls="ingles"
-            >
-              Inglés Técnico II
-            </button>
-            <ul id="ingles" class="clases">
-              <li class="file-item">
-                <div>
-                  <span>Nota primer parcial: 9</span>
-                </div>
-                <div>
-                  <span>Nota segundo parcial: 7.0</span>
-                </div>
-                <div>
-                  <span>Nota recuperatorio: N/A</span>
-                </div>
-                <div>
-                  <span>Nota final: 8</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Materia: Programación Web II -->
-          <div class="materia-header">
-            <button
-              class="toggle-btn"
-              aria-expanded="false"
-              aria-controls="programacionweb"
-            >
-              Programación Web II
-            </button>
-            <ul id="programacionweb" class="clases">
-              <li class="file-item">
-                <div>
-                  <span>Nota primer parcial: 8.0</span>
-                </div>
-                <div>
-                  <span>Nota segundo parcial: 7.5</span>
-                </div>
-                <div>
-                  <span>Nota recuperatorio: N/A</span>
-                </div>
-                <div>
-                  <span>Nota final: 8</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Materia: Seguridad y Calidad en Aplicaciones Web -->
-          <div class="materia-header">
-            <button
-              class="toggle-btn"
-              aria-expanded="false"
-              aria-controls="seguridad"
-            >
+        <div class="search-container">
+          <select id="search-select" class="search-select">
+            <option value="">Selecciona una materia...</option>
+            <option value="ingles">Inglés técnico II</option>
+            <option value="programacion-web">Programación Web II</option>
+            <option value="seguridad">
               Seguridad y Calidad en Aplicaciones Web
+            </option>
+          </select>
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Buscar nota..."
+          />
+          <button class="search-btn" id="search-btn">Buscar</button>
+        </div>
+
+        <div class="materia">
+          <div class="materia-header">
+            <button
+              class="toggle-btn"
+              aria-expanded="false"
+              aria-controls="sc2024"
+            >
+              Segundo cuatrimestre 2024
             </button>
-            <ul id="seguridad" class="clases">
-              <li class="file-item">
-                <div>
-                  <span>Nota primer parcial: 5.5</span>
-                </div>
-                <div>
-                  <span>Nota segundo parcial: 7.0</span>
-                </div>
-                <div>
-                  <span>Nota recuperatorio: 8</span>
-                </div>
-                <div>
-                  <span>Nota final: 8</span>
-                </div>
-              </li>
-            </ul>
+            <ul id="sc2024" class="clases">
+              <button
+                class="toggle-btn"
+                aria-expanded="false"
+                aria-controls="programacion-web"
+              >
+                Programación Web II
+              </button>
+              <ul id="programacion-web" class="articulos">
+                <li class="file-item">
+                  <div>
+                    <img
+                      src="../imagenes/txt.jpg"
+                      alt="pdf"
+                      class="extension"
+                    />
+                    <a href="../pdf/PHP ejercicio 1.txt" target="_blank"
+                      >PHP ejercicio 1.txt (15 B)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="">
+                      <img
+                        src="../imagenes/favoritos agregados.png"
+                        alt="favoritos"
+                        class="extension"
+                      />
+                    </a>
+                    <a
+                      href="../pdf/PHP ejercicio 1.txt"
+                      target="_blank"
+                    >
+                      <img
+                        src="../imagenes/descargar.jpg"
+                        alt="descargar"
+                        class="extension"
+                      />
+                    </a>
+                    <input type="checkbox" class="file-checkbox" />
+                  </div>
+                </li>
+              </ul>
           </div>
+
+          <div class="materia-header">
+            <button
+              class="toggle-btn"
+              aria-expanded="false"
+              aria-controls="pc2024"
+            >
+              Primer cuatrimestre 2024
+            </button>
+            <ul id="pc2024" class="clases">
+              <button
+                class="toggle-btn"
+                aria-expanded="false"
+                aria-controls="ingles1"
+              >
+                Inglés Técnico I
+              </button>
+              <ul id="ingles1" class="articulos">
+                <li class="file-item">
+                  <div>
+                    <img
+                      src="../imagenes/txt.jpg"
+                      alt="pdf"
+                      class="extension"
+                    />
+                    <a href="../pdf/Unidad 1 ejercicios.txt" target="_blank"
+                      >Unidad 1 ejercicios (20 B)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="">
+                      <img
+                        src="../imagenes/favoritos.png"
+                        alt="favoritos"
+                        class="extension"
+                      />
+                    </a>
+                    <a
+                      href="../pdf/Unidad 1 ejercicios.txt"
+                      target="_blank"
+                    >
+                      <img
+                        src="../imagenes/descargar.jpg"
+                        alt="descargar"
+                        class="extension"
+                      />
+                    </a>
+                    <input type="checkbox" class="file-checkbox" />
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="btn-nota">
+          <a href="./subir-nota.html"><button>Nueva nota</button></a>
         </div>
       </section>
     </main>
